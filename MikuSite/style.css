@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #F5FEFF;
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  background-color: #36C6BC;
+  width: 100%;
+  color: #F5FEFF;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  padding: 10px;
+  box-shadow: 0px 5px 10px #35393C80;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  width: 70%;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  display: block;
+  font-weight: bold;
+  text-shadow: 1px 1.5px #35393C;
+  padding: .2em 0;
+  border-radius: 5px;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul li:hover {
+  color: #E53C84;
+  font-weight: bold;
+  text-shadow: 1px 1.5px #F5FEFF;
+  background-color: #F5FEFF68;
+  cursor: pointer;
+}
+
+main {
+  padding-top: 100px;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px auto;
+}
+
+h1 span {
+  display: block;
+  margin: 0 auto;
+}
+
+#title {
+  font-size: 130%;
+  letter-spacing: .2em;
+  width: 70%;
+  max-width: 900px;
+  border-bottom: 1px solid black;
+  text-shadow: 2px 2px #36C6BC50;
+}
+
+#subtitle {
+  font-size: 80%;
+  letter-spacing: .1em;
+  text-shadow: 2px 2px #E53C8450;
+  max-width: 90%;
+}
+
+#img-div {
+  width: 60%;
+  min-width: 300px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  background-color: #F5FEFF;
+  border: 2px solid black;
+}
+
+.image {
+  margin: 0 auto;
+}
+
+.caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5em;
+}
+
+.caption span {
+  font-size: 13px;
+  margin: 0;
+}
+
+.art::before {
+  content: "Illustration: ";
+  text-align: right;
+}
+
+.music::before {
+  content: "Music: ";
+  text-align: right;
+}
+
+.credit {
+  font-style: italic;
+  text-align: right;
+}
+
+.chapter {
+  width: 70%;
+  max-width: 900px;
+  min-width: 300px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.anchor {
+  position: absolute;
+  left: 0;
+  top: -140px;
+  height: 0;
+  width: 0;
+}
+
+h2 {
+  letter-spacing: .1em;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  font-size: 150%;
+}
+
+h3 {
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #E53C84;
+  margin: 10px 0;
+}
+
+.divider {
+  width: 60%;
+  margin-top: -5px;
+  height: 1px;
+  background: linear-gradient(to right, #E53C84, #F5FEFF)
+}
+
+.content {
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 1.5rem;
+}
+
+.content a {
+  color: #239399;
+  font-weight: bold;
+}
+
+#miku-box {
+  align-self: center;
+  width: 40%;
+  min-width: 200px;
+}
+
+.inline, details, summary, .inline > p {
+  display: inline;
+}
+
+.warning {
+  background-color: #36C6BC20;
+  vertical-align: top;
+  font-size: 80%;
+  font-weight: bold;
+}
+
+details > summary {
+  text-decoration: underline;
+}
+
+.warning > summary {
+  color: red;
+}
+
+details > summary:hover {
+  cursor: pointer;
+}
+
+.aside-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+aside {
+  background-color: #36C6BC10;
+  padding: 10px 15px;
+  font-size: 90%;
+}
+
+.aside-topic {
+  color: #239399;
+  font-weight: bold;
+}
+
+.aside-text {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0;
+}
+
+.timeline li {
+  display: block;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.date::after {
+  content: "-";
+  margin: 0 .5em;
+  
+}
+
+li .image {
+  margin: 15px auto 0;
+  max-width: 700px;
+}
+
+#miku-bye img {
+  border: none;
+}
+
+.references {
+  padding-left: 1rem;
+}
+
+.ref::marker {
+  font-size: 80%;
+}
+
+.ref {
+  margin-bottom: 15px;
+}
+
+.ref p {
+  margin-left: 5px;
+}
+
+li p {
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  font-size: 80%;
+  margin: 10px auto;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+/* mobile landscape layout (375px to 499px) */
+@media only screen and (min-width: 375px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav ul li {
+    width: 45%;
+  }
+}
+
+/* tablet portrait layout (768px to 959px) */
+@media only screen and (min-width: 770px) {
+  nav ul li {
+    width: 20%;
+  }
+}
